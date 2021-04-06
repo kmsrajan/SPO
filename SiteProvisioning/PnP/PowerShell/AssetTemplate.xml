@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnpProvisioningTemplate>
+   <pnpSiteFields>
+        <Field ID="{abce6fc7-227e-4bbe-8015-83913e05cffe}" Type="Text" StaticName="ExpAssetId" Name="ExpAssetId" DisplayName="Asset Id" Group="Subsurface Site Metadata Columns" MaxLength="255" AllowDeletion="TRUE" />
+        <Field ID="{e239bda4-0b4c-439e-9ca7-b3d213a86f2f}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="ExpAssetType" Name="ExpAssetType" DisplayName="Asset Type" Required="FALSE"  Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" TermSetId="bd960cb8-7c32-456d-8b25-d0a6ff7b48a4" TermSetPath="POC Exploration|Asset Type" >
+            <!-- <TaxonomyGroup ID="4f16947b-2ca2-4260-994b-8d4441b55cc5">POC Exploration</TaxonomyGroup>
+            <TermSet ID="20330deb-8ef9-4371-b568-158fe20913e0">Area</TermSet> -->
+        </Field>
+        <Field ID="{d75deb7d-b779-4a52-8f13-28234223c41f}" Type="Note" StaticName="ExpRelatedAssets" Name="ExpRelatedAssets" DisplayName="Related Assets" NumLines="6" RichText="FALSE" Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" RichTextMode="Compatible" />
+        <Field ID="{b4434732-452c-4659-9c60-a6b7010c3ea1}" Type="TaxonomyFieldTypeMulti" Mult="FALSE" StaticName="ExpArea" Name="ExpArea" DisplayName="Area" Required="FALSE"  Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" TermSetId="20330deb-8ef9-4371-b568-158fe20913e0" TermSetPath="POC Exploration|Area" >
+            <!-- <TaxonomyGroup ID="4f16947b-2ca2-4260-994b-8d4441b55cc5">POC Exploration</TaxonomyGroup>
+            <TermSet ID="20330deb-8ef9-4371-b568-158fe20913e0">Area</TermSet> -->
+        </Field>
+        <!-- <Field ID="{e239bda4-0b4c-439e-9ca7-b3d213a86f2f}" Type="TaxonomyFieldType" StaticName="ExpArea" Name="ExpArea" SourceID="http://schemas.microsoft.com/sharepoint/v3"  DisplayName="Area" Group="Subsurface Site Metadata Columns" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE"> 
+            <Default /> 
+            <Customization> 
+                <ArrayOfProperty> 
+                    <Property> 
+                        <Name>SspId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string">e47a38d0-0132-428e-b64a-d5b38d4817d7</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>GroupId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string">4f16947b-2ca2-4260-994b-8d4441b55cc5</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>TermSetId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string">20330deb-8ef9-4371-b568-158fe20913e0</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>TextField</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string">{e239bda4-0b4c-439e-9ca7-b3d213a86f2f}</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>AnchorId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string">00000000-0000-0000-0000-000000000000</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>IsPathRendered</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean">false</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>IsKeyword</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean">false</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>Open</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean">false</Value> 
+                    </Property> 
+                </ArrayOfProperty> 
+            </Customization> 
+        </Field> -->
+        <Field ID="{b519d5ff-8fc6-4ffe-a9cb-9a4c0b377271}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="EIMSecurityClassification" Name="EIMSecurityClassification" DisplayName="Security Classification" Required="TRUE"  Group="Enterprise Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="a18ac134-f770-4061-a9a2-7e9ec500e391">Enterprise-Synced</TaxonomyGroup>
+            <TermSet ID="6586e8a5-4521-47b6-a267-a502c9a77ea2">Security Classification</TermSet>
+        </Field>
+        <Field ID="{562e977e-982c-419b-9a1d-045fea1d71e5}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMBasin" Name="EIMBasin" DisplayName="Basin" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="dd8ea1ba-7897-47bf-ba2a-f94bff34ce6d">Basin</TermSet>
+        </Field>
+         <Field ID="{4c609200-e97e-4143-a60b-720f6289c484}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMBlock" Name="EIMBlock" DisplayName="Block" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="b3aea3ce-3c5a-41c5-8af2-8da777f85a59">Block</TermSet>
+        </Field>
+         <Field ID="{2fc9d04c-674d-4532-80e5-b5dfa7e7bd2a}" StaticName="EIMContinent" Name="EIMContinent" DisplayName="Continent" Type="TaxonomyFieldTypeMulti" Mult="TRUE"  Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="a6e771ef-7935-4928-8fac-8734f039e96d">Continent</TermSet>
+        </Field>
+        <Field ID="{6bf6ec96-a4d9-4fee-af76-fee4d5d0c80e}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="EIMCountry" Name="EIMCountry" DisplayName="Country" Required="FALSE"  Group="Enterprise Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="a18ac134-f770-4061-a9a2-7e9ec500e391">Enterprise-Synced</TaxonomyGroup>
+            <TermSet ID="0250f7c1-058f-435e-97fc-c7f58584592f">Country</TermSet>
+        </Field>
+        <Field ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" Name="WorkState" StaticName="WorkState" DisplayName="State/Province" Group="Core Contact and Calendar Columns"  Type="Text" NumLines="2" Sortable="TRUE" />
+        
+        <!-- <Field ID="{b7d7df02-afdb-488b-8b0d-9a50c1f94e0a}" Type="TaxonomyFieldType" Name="MyTestMMD" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="MyTestMMD" DisplayName="My Test Tax" Group="Test group" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE"> 
+            <Default /> 
+            <Customization> 
+                <ArrayOfProperty> 
+                    <Property> 
+                        <Name>SspId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string">e47a38d0-0132-428e-b64a-d5b38d4817d7</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>GroupId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string">4f16947b-2ca2-4260-994b-8d4441b55cc5</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>TermSetId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string">20330deb-8ef9-4371-b568-158fe20913e0</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>TextField</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string">{b7d7df02-afdb-488b-8b0d-9a50c1f94e0a}</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>AnchorId</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string">00000000-0000-0000-0000-000000000000</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>IsPathRendered</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean">false</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>IsKeyword</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean">false</Value> 
+                    </Property> 
+                    <Property> 
+                        <Name>Open</Name> 
+                        <Value xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean">false</Value> 
+                    </Property> 
+                </ArrayOfProperty> 
+            </Customization> 
+        </Field> -->
+    </pnpSiteFields>
+        <!-- Project specific fields -->
+     <pnpProjectFields>
+        <Field ID="{3a428348-1771-4e29-9cac-766f81d12065}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="ExpProjectType" Name="ExpProjectType" DisplayName="Project Type" Required="FALSE"  Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" TermSetId="1d2aed08-f3ac-4ac4-966c-bb9a33b4d86d" TermSetPath="POC Exploration|Project Type">
+            <!-- <TaxonomyGroup ID="4f16947b-2ca2-4260-994b-8d4441b55cc5">POC Exploration</TaxonomyGroup>
+            <TermSet ID="1d2aed08-f3ac-4ac4-966c-bb9a33b4d86d">Project Type</TermSet>  -->
+        </Field>
+        <Field ID="{8b35f4c8-9c1a-482c-8433-9c16940726c4}" Type="DateTime" StaticName="ExpProjectStartDate" Name="ExpProjectStartDate" DisplayName="Project Start Date" Required="FALSE" Format="DateOnly" Group="Subsurface Site Metadata Columns" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field ID="{78ace9ad-072c-4d21-90ea-49d8a179dc33}" Type="DateTime" StaticName="ExpProjectEndDate" Name="ExpProjectEndDate" DisplayName="Project End Date" Required="FALSE" Format="DateOnly" Group="Subsurface Site Metadata Columns" CalType="0" AllowDeletion="TRUE"></Field>
+        
+        <Field ID="{ef53a54e-741f-4ce7-9fd2-fdd78b3fdc00}" Type="Text" StaticName="ExpApprovalInformation" Name="ExpApprovalInformation" DisplayName="Approval Information" Group="Subsurface Site Metadata Columns" MaxLength="255" AllowDeletion="TRUE" />
+        <Field ID="{e92f9099-cbe5-42fc-a650-86920f42a94c}" Type="DateTime" StaticName="ExpApprovalDate" Name="ExpApprovalDate" DisplayName="Approval Date" Required="FALSE" Format="DateOnly" Group="Subsurface Site Metadata Columns" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field ID="{29c25820-149e-494a-af11-8553dc6cf47b}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMDecisionGate" Name="EIMDecisionGate" DisplayName="Decision Gate" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE" TermSetId="aa7075b8-d08f-492d-8b3b-46b38bab4a0d">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="aa7075b8-d08f-492d-8b3b-46b38bab4a0d">Decision Gate</TermSet>
+        </Field> 
+        <Field ID="{3be4df42-f7b3-48ee-ab34-e3b0fb80eafe}" Type="Text" StaticName="ExpProjectId" Name="ExpProjectId" DisplayName="Project Id" Group="Subsurface Site Metadata Columns" MaxLength="255" AllowDeletion="TRUE" />
+        
+        <Field ID="{8445001c-e172-4176-9824-d28cb948b0fa}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="ExpProjectStatus" Name="ExpProjectStatus" DisplayName="Project Status" Required="FALSE"  Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" TermSetId="e63e2d5e-e81c-4a8a-84c8-92c0e7542166" TermSetPath="POC Exploration|Project Status" >
+            <!-- <TaxonomyGroup ID="4f16947b-2ca2-4260-994b-8d4441b55cc5">POC Exploration</TaxonomyGroup>
+            <TermSet ID="e63e2d5e-e81c-4a8a-84c8-92c0e7542166">Project Status</TermSet> -->
+        </Field>
+        <Field ID="{4bf85c42-ca32-4d86-922c-4a695eb8c041}" Type="User" StaticName="ExpProjectManager" Name="ExpProjectManager" DisplayName="Project Manager" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE"  />
+
+    </pnpProjectFields>
+        <!-- License specific fields -->
+    <pnpLicenseFields>
+        <Field ID="{67686c1c-51d1-4f83-8ec1-6d26d3885eca}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMLicense" Name="EIMLicense" DisplayName="License" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="6c8238d0-84a8-4183-b7b1-be0b06d14b7b">License</TermSet>
+        </Field>
+    </pnpLicenseFields>
+    <!-- Well specific fields -->
+    <pnpWellFields>
+        <Field ID="{7bb0b588-036e-4a98-ab0d-81ac5ef9a77e}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMWell" Name="EIMWell" DisplayName="Well" Required="FALSE"  Group="Coverage Metadata Columns">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="92fe4f39-937b-49c2-a5a7-fd1767a6d8f7">Well</TermSet>
+        </Field>
+        <Field ID="{67686c1c-51d1-4f83-8ec1-6d26d3885eca}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMLicense" Name="EIMLicense" DisplayName="License" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="6c8238d0-84a8-4183-b7b1-be0b06d14b7b">License</TermSet>
+        </Field>
+    </pnpWellFields>
+    <!-- Prospect specific fields -->
+    <pnpProspectFields>  
+        <Field ID="{8445001c-e172-4176-9824-d28cb948b0fa}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="ExpProspectStatus" Name="ExpProspectStatus" DisplayName="Prospect Status" Required="FALSE"  Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" TermSetId="e94cef85-ec6b-4915-9045-fc385fd80928" TermSetPath="POC Exploration|Prospect Status">
+            <!-- <TaxonomyGroup ID="4f16947b-2ca2-4260-994b-8d4441b55cc5">POC Exploration</TaxonomyGroup>
+            <TermSet ID="e63e2d5e-e81c-4a8a-84c8-92c0e7542166">Project Status</TermSet> -->
+        </Field>      
+        <Field ID="{ef53a54e-741f-4ce7-9fd2-fdd78b3fdc00}" Type="Text" StaticName="ExpApprovalInformation" Name="ExpApprovalInformation" DisplayName="Approval Information" Group="Subsurface Site Metadata Columns" MaxLength="255" AllowDeletion="TRUE" />
+        <Field ID="{e92f9099-cbe5-42fc-a650-86920f42a94c}" Type="DateTime" StaticName="ExpApprovalDate" Name="ExpApprovalDate" DisplayName="Approval Date" Required="FALSE" Format="DateOnly" Group="Subsurface Site Metadata Columns" CalType="0" AllowDeletion="TRUE"></Field>
+         <Field ID="{29c25820-149e-494a-af11-8553dc6cf47b}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMDecisionGate" Name="EIMDecisionGate" DisplayName="Decision Gate" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE" TermSetId="aa7075b8-d08f-492d-8b3b-46b38bab4a0d" >
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="aa7075b8-d08f-492d-8b3b-46b38bab4a0d">Decision Gate</TermSet>
+        </Field> 
+    </pnpProspectFields>
+    <!-- Regional specific fields -->
+    <pnpRegionalFields>
+        <Field ID="{12262fdb-3afa-4f6a-976e-9eeff6bffc0e}" Type="User" StaticName="ExpRegionalResponsible" Name="ExpRegionalResponsible" DisplayName="Regional Responsible" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" />
+    </pnpRegionalFields>
+    <!-- Data room specific fields -->
+    <pnpDataroomFields>
+        <Field ID="{12262fdb-3afa-4f6a-976e-9eeff6bffc0e}" Type="User" StaticName="ExpRegionalResponsible" Name="ExpRegionalResponsible" DisplayName="Regional Responsible" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="Subsurface Site Metadata Columns" AllowDeletion="TRUE" />
+        <Field ID="{0f055952-aa49-4764-9eb7-e0ba9b082c21}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMCounterparty" Name="EIMCounterparty" DisplayName="Counterparty" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="5bcd3742-12ff-44ba-a297-326d29cfc029">Counterparty</TermSet>
+        </Field>
+        <!-- This column useage and requirement needs to be discussed with team-->
+        <Field ID="{aef2e20c-531a-4c1f-9d44-9d9d3b1a3013}" Type="DateTime" StaticName="ExpExpiryDate" Name="ExpExpiryDate" DisplayName="Expiry Date" Required="FALSE" Format="DateOnly" Group="Subsurface Site Metadata Columns" CalType="0" AllowDeletion="TRUE"></Field>
+        
+    </pnpDataroomFields>
+    <!-- Field specific fields -->
+    <pnpFieldFields>
+        <Field ID="{56c40698-b63d-41d0-a73f-413a0d4a40c9}" Type="TaxonomyFieldTypeMulti" Mult="TRUE" StaticName="EIMField" Name="EIMField" DisplayName="Field" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="bb03b0af-6c71-485a-8d19-649941a9afaa">Field</TermSet>
+        </Field>
+    </pnpFieldFields>
+    <!-- Survey specific fields -->
+    <pnpSurveyFields>
+        <Field ID="{b8dc425a-39a7-4e87-b42c-73fcd31796b4}" Type="TaxonomyFieldType" Mult="FALSE" StaticName="ExpSurvey" Name="ExpSurvey" DisplayName="ExpSurvey" Required="FALSE"  Group="Coverage Metadata Columns" AllowDeletion="TRUE">
+            <TaxonomyGroup ID="2594a698-3642-49ca-960b-7fbe97ec88e0">Coverage-Synced</TaxonomyGroup>
+            <TermSet ID="d33f5a32-5927-419a-919b-e9f3bcd9191e">Seismic Survey</TermSet>
+        </Field>
+    </pnpSurveyFields>         
+   <pnpContentTypes>
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC" Name="Subsurface Metadata" Group="Equinor content types" AssetType="Subsurface" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC01" Name="Subsurface Asset Metadata" Group="Equinor content types" AssetType="SubsurfaceAsset" />
+        <!-- <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC02" Name="Subsurface Prospect Metadata" Group="Equinor content types" AssetType="Prospect" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC03" Name="Subsurface License Metadata" Group="Equinor content types" AssetType="License" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC04" Name="Subsurface Well Metadata" Group="Equinor content types" AssetType="Well" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC05" Name="Subsurface Field Metadata" Group="Equinor content types" AssetType="Field" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC06" Name="Subsurface Survey Metadata" Group="Equinor content types" AssetType="Survery" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC07" Name="Subsurface Regional Metadata" Group="Equinor content types" AssetType="Regional" />
+        <pnpContentType ID="0x01001151EC965EE4444588AA919EAEAA5CCC08" Name="Subsurface Dataroom Metadata" Group="Equinor content types" AssetType="Dataroom" />
+        -->
+   </pnpContentTypes>
+   <pnpLists>
+    <pnpList Name="AssetConfigurations" Type="Equinor content types" AssetType="GenericList"/>
+   </pnpLists>
+</pnpProvisioningTemplate>
